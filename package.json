@@ -1,0 +1,26 @@
+{
+  "name": "nak-node-seminar",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Benedikt Stemmildt",
+  "scripts": {
+    "start": "node server",
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "compression": "latest",
+    "consolidate": "latest",
+    "cookie-parser": "latest",
+    "debug": "latest",
+    "express": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "serve-favicon": "latest",
+    "swig": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BeneStem/nak-node-seminar"
+  }
+}

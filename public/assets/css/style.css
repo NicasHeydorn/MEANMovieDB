@@ -1,0 +1,55 @@
+html {
+}
+
+body {
+    padding: 50px 30%;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.genres li {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: #e50b62;
+    color: #efefef;
+}
+
+.genres li + li {
+    margin-left: 10px;
+}
+
+.film-entry {
+    background-color: #efefef;
+    padding:20px;
+    border-bottom: 3px solid #e50b62;
+    border-radius: 5px;
+}
+
+.film-entry h2 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.actors li {
+    list-style-type: none;
+
+}
+.actors li:before {
+    content: '- ';
+    position:relative;
+    left: -10px;
+}
+
+.cover {
+    float:right;
+    max-width:200px;
+}
+
+.clear {
+    clear:both;
+}

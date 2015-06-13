@@ -1,0 +1,17 @@
+<div data-ng-repeat="films in films" class="film-entry">
+
+    <img class="cover" src="/assets/img/{{films.cover}}" />
+
+    <h2>{{films.title}}</h2>
+    <span class="year">{{films.year}}</span>
+
+    <ul class="genres">
+        <li  data-ng-repeat="genre in films.genres">{{genre}}</li>
+    </ul>
+
+    <ul class="actors">
+        <li data-ng-repeat="actors in films.actors">{{actors}}</li>
+    </ul>
+
+    <div class="clear"></div>
+</div>
