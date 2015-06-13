@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Pulp Fiction",
+    "cover": "pulp-fiction.jpg",
+    "year": 1994,
+    "_id": "557c29837413748d2d39968b",
+    "__v": 0,
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "actors": [
+      "John Travolta",
+      "Angelina Jolie",
+      "Bruce Willis"
+    ]
+  },
+  {
+    "title": "Django Unchained",
+    "cover": "django-unchained.jpg",
+    "year": 2012,
+    "_id": "557c33fe7413748d2d39968c",
+    "__v": 0,
+    "genres": [
+      "Western",
+      "Action"
+    ],
+    "actors": [
+      "Christoph Waltz",
+      "Jamie Foxx"
+    ]
+  },
+  {
+    "title": "Ohne Limit",
+    "cover": "ohne-limit.jpg",
+    "year": 2011,
+    "_id": "557c344b7413748d2d39968d",
+    "__v": 0,
+    "genres": [
+      "Action"
+    ],
+    "actors": [
+      "Bradley Cooper",
+      "Robert DeNiro"
+    ]
+  },
+  {
+    "title": "Interstellar",
+    "cover": "interstellar.jpg",
+    "year": 2014,
+    "_id": "557c34977413748d2d39968e",
+    "__v": 0,
+    "genres": [
+      "Science Fiction",
+      "Drama"
+    ],
+    "actors": [
+      "Matthew McConaughey",
+      "Anne Hathaway"
+    ]
+  },
+  {
+    "title": "Der Pate",
+    "cover": "der-pate.jpg",
+    "year": 1972,
+    "_id": "557c34ce7413748d2d39968f",
+    "__v": 0,
+    "genres": [
+      "Mafia",
+      "Action"
+    ],
+    "actors": [
+      "Marlon Brando",
+      "Al Pacino"
+    ]
+  },
+  {
+    "title": "Matrix",
+    "cover": "matrix.jpg",
+    "year": 1999,
+    "_id": "557c34f47413748d2d399690",
+    "__v": 0,
+    "genres": [
+      "Science-Fiction",
+      "Action"
+    ],
+    "actors": [
+      "Keanu Reeves",
+      "Laurence Fishburne"
+    ]
+  }
+]
