@@ -53,3 +53,14 @@ a {
     color:#fff;
     font-size:1em;
 }
+
+.pinkbg {
+    background-color:#e50b62;
+    color:#fff;
+}
+.pinktext {
+    color:#e50b62;
+}
+.logo {
+    font-family: 'Monoton', cursive;
+}
