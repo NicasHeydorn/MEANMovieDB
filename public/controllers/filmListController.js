@@ -1,4 +1,4 @@
-angular.module('nak-node-seminar').controller('FilmListController', ['$scope', 'Film', 'Genre', function ($scope, Film, Genre) {
+angular.module('nak-node-seminar').controller('FilmListController', ['$scope', 'Film', 'Genre', 'Actor', function ($scope, Film, Genre, Actor) {
     'use strict';
 
     Film.query().$promise.then(function (films) {
@@ -7,6 +7,10 @@ angular.module('nak-node-seminar').controller('FilmListController', ['$scope', '
 
     Genre.query().$promise.then(function (genres) {
         $scope.genres = genres;
+    });
+
+    Actor.query().$promise.then(function (actors) {
+        $scope.actors = actors;
     });
 
 }]);

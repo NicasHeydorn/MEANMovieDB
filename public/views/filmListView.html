@@ -1,11 +1,18 @@
-<div class="filter-bar"><input type="text" placeholder="Search..." ng-model="filterText"/>
-<select name="genre" ng-model="filterGenre">
-<option value="">All</option>
-<option ng-repeat="genre in genres">{{genre}}</option>
-</select>
+<div class="filter-bar">
+    <input type="text" placeholder="Search..." ng-model="filterText"/>
+    <label for="genre">Genre </label>
+    <select name="genre" ng-model="filterGenre">
+        <option value="">All</option>
+        <option ng-repeat="genre in genres">{{genre}}</option>
+    </select>
+    <label for="actor">Actor</label>
+    <select name="actor" ng-model="filterActor">
+        <option value="">All</option>
+        <option ng-repeat="actor in actors">{{actor}}</option>
+    </select>
 </div>
 <div class="container">
-<div data-ng-repeat="films in films | filter: {title: filterText, genres: filterGenre}" class="film-entry">
+<div data-ng-repeat="films in films | filter: {title: filterText, genres: filterGenre, actors: filterActor}" class="film-entry">
 
     <img class="cover" src="/assets/img/{{films.cover}}" />
 

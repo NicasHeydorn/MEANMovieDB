@@ -23,6 +23,16 @@ module.exports = (function () {
         });
     }
 
+    function getActors(req,res,next) {
+        Film.distinct("actors").exec(function (err, actors) {
+            if (err) {
+                next(err);
+            } else {
+                res.send(actors);
+            }
+        });
+    }
+
     function insert(req, res, next) {
         new Film(req.body).save(function(err, film) {
             if (err) {
@@ -36,6 +46,7 @@ module.exports = (function () {
     return {
         find: find,
         insert: insert,
-        getGenres: getGenres
+        getGenres: getGenres,
+        getActors: getActors
     };
 })();
