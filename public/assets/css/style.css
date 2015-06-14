@@ -53,3 +53,7 @@ a {
     color:#fff;
     font-size:1em;
 }
+
+.btn-success {
+    background-color:#b0b0b0 !important;
+}
