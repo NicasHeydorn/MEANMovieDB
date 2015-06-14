@@ -16,16 +16,9 @@ a {
     color: #00B7FF;
 }
 
-.genres li {
-    display: inline-block;
-    padding: 3px;
-    border-radius: 3px;
+.label-genre {
     background-color: #e50b62;
-    color: #efefef;
-}
-
-.genres li + li {
-    margin-left: 10px;
+    margin:.125em;
 }
 
 .film-entry {
@@ -40,18 +33,9 @@ a {
     margin-right: 20px;
 }
 
-.actors li {
-    list-style-type: none;
-
-}
-.actors li:before {
-    content: '- ';
-    position:relative;
-    left: -10px;
-}
-
 .cover {
     float:right;
+    width:100%;
     max-width:200px;
 }
 
@@ -68,4 +52,6 @@ a {
     text-align:center;
     display:block;
     color:#fff;
+    font-size:1em;
 }
+
