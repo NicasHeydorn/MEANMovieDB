@@ -25,7 +25,12 @@ angular.module('nak-node-seminar').controller('FilmListController',
             actors: $scope.filmToAdd.actors, 
             genres: $scope.filmToAdd.genres, 
             plot: $scope.filmToAdd.plot}).$promise.then(function() {
-
+                Film.query().$promise.then(function (films) {
+                    films.forEach(function(item) {
+                        item.actors = item.actors.sort();
+                    });
+                    $scope.films = films;
+                });
         });
     };
 
