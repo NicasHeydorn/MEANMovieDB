@@ -54,6 +54,9 @@ a {
     font-size:1em;
 }
 
+.addfilm {
+    background-color:#b0b0b0 !important;
+}
 .pinkbg {
     background-color:#e50b62;
     color:#fff;
