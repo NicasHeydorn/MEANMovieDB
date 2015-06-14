@@ -25,7 +25,7 @@
         </select>
     </div>
 
-    <!-- Trigger the modal with a button -->
+
     <!-- Trigger the modal with a button -->
     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
@@ -40,7 +40,16 @@
                     <h4 class="modal-title">Modal Header</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                    <form>
+                        Titel: <input type="text" name="title"><br><br>
+                        Jahr: <input type="text" name="year"><br><br>
+                        Bildlink: <input type="text" name="cover"><br><br>
+                        Schauspieler: <input type="textarea" name="actor"><br><br>
+                        Genre:  <select class="form-control" name="genre" ng-model="filterGenre">
+                                    <option value="">All</option>
+                                    <option ng-repeat="genre in genres">{{genre}}</option>
+                                </select>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
