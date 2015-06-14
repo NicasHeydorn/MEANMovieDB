@@ -1,23 +1,26 @@
 <nav class="filter-bar navbar navbar-default navbar-fixed-top">
+    <div class="filter hidden-xs col-sm-3">
+        <h1 class="logo"><span class="glyphicon glyphicon-film" aria-hidden="true"></span><br>movieDB</h1>
+    </div>
     <div class="filter col-xs-3 col-sm-2">
         <label for="search" class="lead">Search</label>
         <input class="form-control" type="text" placeholder="Search..." ng-model="filterText"/>
     </div>
-    <div class="form-group col-xs-3 col-sm-3">
+    <div class="form-group col-xs-3 col-sm-2">
         <label for="genre" class="lead">Genre</label>
         <select class="form-control" name="genre" ng-model="filterGenre">
             <option value="">All</option>
             <option ng-repeat="genre in genres">{{genre}}</option>
         </select>
     </div>
-    <div class="form-group col-xs-3 col-sm-3">
+    <div class="form-group col-xs-3 col-sm-2">
         <label for="actor" class="lead">Actor</label>
         <select class="form-control" name="actor" ng-model="filterActor">
             <option value="">All</option>
             <option ng-repeat="actor in actors">{{actor}}</option>
         </select>
     </div>
-    <div class="form-group col-xs-3 col-sm-3">
+    <div class="form-group col-xs-3 col-sm-2">
         <label for="sortby" class="lead">Sort by</label>
         <select class="form-control" name="sortby" ng-model="sortOrder" data-ng-init="sortOrder='title'">
             <option value="title">Title</option>
