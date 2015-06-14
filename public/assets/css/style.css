@@ -15,7 +15,11 @@ a {
 }
 
 .container {
-    padding: 50px 30%;
+    width:100%;
+    max-width:720px;
+    margin: 0 auto;
+    position:relative;
+    top:5em;
 }
 
 .genres li {
@@ -64,18 +68,22 @@ a {
 .filter-bar {
     position:fixed;
     top:0;
-    height: 4em;
-    padding:3px;
+    padding:1em;
     background-image: linear-gradient(#e50b62 0,  #e50b62 85%, #c60955 86%, #c60955 100%);
     box-shadow: 0 0 8px #ccc;
     width: 100%;
-    padding-left: 20%;
+    text-align:center;
+    z-index:99;
+    display:block;
+}
+.filter {
+    display:inline-block;
 }
 .filterinput {
     border:0;
     padding:.5em;
     font-size:1em;
-    height:1.5em;
+    height:1em;
     margin-top:.25em;
     -webkit-border-radius: .5em;
     -moz-border-radius: .5em;
@@ -85,9 +93,14 @@ a {
     border:0;
     padding:.5em;
     font-size:1em;
-    height:2.5em;
+    height:2em;
     margin-top:.25em;
     -webkit-border-radius: .5em;
     -moz-border-radius: .5em;
     border-radius: .5em;
+}
+
+.filter-bar label {
+    color:#fff;
+    font-size:1em;
 }

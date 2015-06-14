@@ -1,32 +1,39 @@
 <div class="filter-bar">
-    <input type="text" placeholder="Search..." ng-model="filterText"/>
-    <label for="genre">Genre </label>
-    <select name="genre" ng-model="filterGenre">
-        <option value="">All</option>
-        <option ng-repeat="genre in genres">{{genre}}</option>
-    </select>
-    <label for="actor">Actor</label>
-    <select name="actor" ng-model="filterActor">
-        <option value="">All</option>
-        <option ng-repeat="actor in actors">{{actor}}</option>
-    </select>
+    <div class="filter">
+        <input class="filterinput" type="text" placeholder="Search..." ng-model="filterText"/>
+    </div>
+    <div class="filter">
+        <label for="genre">Genre </label>
+        <select class="filterdropdown" name="genre" ng-model="filterGenre">
+            <option value="">All</option>
+            <option ng-repeat="genre in genres">{{genre}}</option>
+        </select>
+    </div>
+    <div class="filter">
+        <label for="actor">Actor</label>
+        <select class="filterdropdown" name="actor" ng-model="filterActor">
+            <option value="">All</option>
+            <option ng-repeat="actor in actors">{{actor}}</option>
+        </select>
+    </div>
 </div>
 <div class="container">
-<div data-ng-repeat="films in films | filter: {title: filterText, genres: filterGenre, actors: filterActor}" class="film-entry">
+    <div data-ng-repeat="films in films | filter: {title: filterText, genres: filterGenre, actors: filterActor}"
+         class="film-entry">
 
-    <img class="cover" src="/assets/img/{{films.cover}}" />
+        <img class="cover" src="/assets/img/{{films.cover}}"/>
 
-    <h2>{{films.title}}</h2>
-    <span class="year">{{films.year}}</span>
+        <h2>{{films.title}}</h2>
+        <span class="year">{{films.year}}</span>
 
-    <ul class="genres">
-        <li  data-ng-repeat="genre in films.genres">{{genre}}</li>
-    </ul>
+        <ul class="genres">
+            <li data-ng-repeat="genre in films.genres">{{genre}}</li>
+        </ul>
 
-    <ul class="actors">
-        <li data-ng-repeat="actors in films.actors">{{actors}}</li>
-    </ul>
+        <ul class="actors">
+            <li data-ng-repeat="actors in films.actors">{{actors}}</li>
+        </ul>
 
-    <div class="clear"></div>
-</div>
+        <div class="clear"></div>
+    </div>
 </div>
