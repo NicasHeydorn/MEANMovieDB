@@ -6,11 +6,11 @@ angular.module('nak-node-seminar').controller('FilmListController', ['$scope', '
     });
 
     Genre.query().$promise.then(function (genres) {
-        $scope.genres = genres;
+        $scope.genres = genres.sort();
     });
 
     Actor.query().$promise.then(function (actors) {
-        $scope.actors = actors;
+        $scope.actors = actors.sort();
     });
 
 }]);
