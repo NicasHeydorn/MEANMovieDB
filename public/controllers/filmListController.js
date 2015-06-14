@@ -2,6 +2,9 @@ angular.module('nak-node-seminar').controller('FilmListController', ['$scope', '
     'use strict';
 
     Film.query().$promise.then(function (films) {
+        films.forEach(function(item) {
+            item.actors = item.actors.sort();
+        });
         $scope.films = films;
     });
 
