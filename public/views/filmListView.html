@@ -16,6 +16,10 @@
             <option ng-repeat="actor in actors">{{actor}}</option>
         </select>
     </div>
+    <div class="filter">
+        <img src="http://www.google.de/url?source=imglanding&ct=img&q=http://www.haotu.net/up/3327/256/32-PLus-button.png&sa=X&ved=0CAkQ8wdqFQoTCLSI9oXnjsYCFUVr2wodWDQAYg&usg=AFQjCNG9OygDsNAik2tfwaN6p2xp-_JTxQ" width="25px" height="25px">
+    </div>
+
 </div>
 <div class="container">
     <div data-ng-repeat="films in films | filter: {title: filterText, genres: filterGenre, actors: filterActor}"
