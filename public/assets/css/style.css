@@ -61,7 +61,9 @@ a {
     background-color: #f3f3f3;
     border: 1px solid #ccc;
     width: 50%;
+    height: 50%;
     left: 25%;
+    z-index: 100;
 }
 
 .backdrop {
