@@ -24,12 +24,9 @@
             <option value="year">Year</option>
         </select>
     </div>
-    
-
 
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
+    <!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
 
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
@@ -72,10 +69,13 @@
                     <small>{{films.year}}</small>
                 </h1>
             </div>
+            <div class="col-xs-12 hidden-sm hidden-lg hidden-md text-center">
+                <img class="cover" src="/assets/img/{{films.cover}}"/>
+            </div>
             <div class="col-xs-12">
                 <h4><span class="label label-genre" data-ng-repeat="genre in films.genres">{{genre}}</span></h4>
             </div>
-            <div class="col-xs-8">
+            <div class="col-xs-12 col-sm-8">
                 <div class="col-xs-12 col-sm-6">
                     <div class="row">
                         <ul class="actors list-group">
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-4">
+            <div class="col-sm-4 hidden-xs text-right">
                 <img class="cover" src="/assets/img/{{films.cover}}"/>
             </div>
             <div class="clear"></div>
