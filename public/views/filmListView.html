@@ -1,6 +1,8 @@
 <nav class="filter-bar navbar navbar-default navbar-fixed-top">
     <div class="filter hidden-xs col-sm-3">
-        <a class="logolink" href="/"><h1 class="logo"><span class="glyphicon glyphicon-film" aria-hidden="true"></span><span class="break">movieDB</span></h1></a>
+        <a class="logolink" href="/"><h1 class="logo"><span class="glyphicon glyphicon-film"
+                                                            aria-hidden="true"></span><span class="break">movieDB</span>
+        </h1></a>
     </div>
     <div class="filter col-xs-3 col-sm-2">
         <label for="search" class="lead">Search</label>
@@ -29,7 +31,8 @@
     </div>
     <div class="col-sm-1 hidden-xs">
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal"><span
+                class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
     </div>
 
 </nav>
@@ -76,26 +79,55 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Add movie to database</h4>
             </div>
             <div class="modal-body">
                 <form novalidate>
-                    Title:<br><input type="text" name="title" class="form-control" ng-model="filmToAdd.title"><br><br>
-                    Year: <br><input type="text" name="year" class="form-control" ng-model="filmToAdd.year"><br><br>
-                    Link to Picture:<br><input type="text" name="cover" class="form-control" ng-model="filmToAdd.cover"><br><br>
-                    Actors:<br><select class="form-control" name="genre" multiple ng-model="filmToAdd.actors">
-                        <option ng-repeat="actor in actors">{{actor}}</option>
-                    </select><br><br>
-                    Genres:  <select class="form-control" name="genre" multiple ng-model="filmToAdd.genres">
-                        <option ng-repeat="genre in genres">{{genre}}</option>
-                    </select>
-                    Plot: <textarea name="plot" ng-model="filmToAdd.plot"> </textarea>
+                    <div class="row">
+                    <div class="col-xs-6">
+
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" name="title" class="form-control" ng-model="filmToAdd.title">
+                    </div>
+                    <div class="form-group">
+                        <label>Year</label>
+                        <input type="text" name="year" class="form-control" ng-model="filmToAdd.year">
+                    </div>
+                    <div class="form-group">
+                        <label>Link to Picture</label>
+                        <input type="text" name="cover" class="form-control" ng-model="filmToAdd.cover">
+                    </div>
+                        </div>
+                    <div class="col-xs-6">
+                    <div class="form-group">
+                        <label>Actors</label>
+                        <select class="form-control" name="genre" multiple ng-model="filmToAdd.actors">
+
+                            <option ng-repeat="actor in actors">{{actor}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Genres</label>
+                        <select class="form-control" name="genre" multiple ng-model="filmToAdd.genres">
+                            <option ng-repeat="genre in genres">{{genre}}</option>
+                        </select>
+                    </div>
+                        </div>
+                        <div class="col-xs-12">
+                    <div class="form-group">
+                        <label>Plot</label>
+                        <textarea class="form-control" name="plot" ng-model="filmToAdd.plot"> </textarea>
+                    </div>
+
+                        </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button ng-click="saveFilm()" type="button" class="btn btn-primary">Save changes</button>
+                <button ng-click="saveFilm()" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
             </div>
         </div>
     </div>

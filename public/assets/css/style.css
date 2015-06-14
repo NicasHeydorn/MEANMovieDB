@@ -73,7 +73,7 @@ a {
     font-size: 2.25em;
 }
 
-.logolink, a.logolink:hover {
+.logolink, a.logolink:hover, a.logolink:active, a.logolink:focus {
     color: #fff;
     text-decoration: none;
 }

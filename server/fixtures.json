@@ -1,7 +1,7 @@
 [
   {
     "title": "Pulp Fiction",
-    "cover": "pulp-fiction.jpg",
+    "cover": "http://www.moviepilot.de/files/images/0254/1585/pulp-fiction-cover.jpg",
     "year": 1994,
     "_id": "557c29837413748d2d39968b",
     "__v": 0,
@@ -18,7 +18,7 @@
   },
   {
     "title": "Django Unchained",
-    "cover": "django-unchained.jpg",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Django_Unchained_Poster.jpg/220px-Django_Unchained_Poster.jpg",
     "year": 2012,
     "_id": "557c33fe7413748d2d39968c",
     "__v": 0,
@@ -34,7 +34,7 @@
   },
   {
     "title": "Ohne Limit",
-    "cover": "ohne-limit.jpg",
+    "cover": "http://images.cinefacts.de/OhneLimit-Cover-206835.jpg",
     "year": 2011,
     "_id": "557c344b7413748d2d39968d",
     "__v": 0,
@@ -49,7 +49,7 @@
   },
   {
     "title": "Interstellar",
-    "cover": "interstellar.jpg",
+    "cover": "http://awardswatch.com/wp-content/uploads/2014/09/interstellar_poster_4-620x918.jpg",
     "year": 2014,
     "_id": "557c34977413748d2d39968e",
     "__v": 0,
@@ -65,7 +65,7 @@
   },
   {
     "title": "Der Pate",
-    "cover": "der-pate.jpg",
+    "cover": "http://vignette1.wikia.nocookie.net/der-pate/images/9/9e/R.pate1.jpg/revision/latest?cb=20140812154626",
     "year": 1972,
     "_id": "557c34ce7413748d2d39968f",
     "__v": 0,
@@ -81,7 +81,7 @@
   },
   {
     "title": "Matrix",
-    "cover": "matrix.jpg",
+    "cover": "http://www.ernieputto.de/filmstuff5/matrix/matrix_poster_us5.jpg",
     "year": 1999,
     "_id": "557c34f47413748d2d399690",
     "__v": 0,
