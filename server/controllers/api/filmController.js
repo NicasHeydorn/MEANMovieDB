@@ -13,6 +13,16 @@ module.exports = (function () {
         });
     }
 
+    function getGenres(req,res,next) {
+        Film.distinct("genres").exec(function (err, genres) {
+            if (err) {
+                next(err);
+            } else {
+                res.send(genres);
+            }
+        });
+    }
+
     function insert(req, res, next) {
         new Film(req.body).save(function(err, film) {
             if (err) {
@@ -25,6 +35,7 @@ module.exports = (function () {
 
     return {
         find: find,
-        insert: insert
+        insert: insert,
+        getGenres: getGenres
     };
 })();
