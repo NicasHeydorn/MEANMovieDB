@@ -5,7 +5,8 @@ var filmSchema = mongoose.Schema({
     year: Number,
     cover: String,
     actors: Array,
-    genres: Array
+    genres: Array,
+    plot: String
 });
 
 mongoose.model('Film', filmSchema);

@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="col-sm-4 hidden-xs text-right">
-                <img class="cover" src="/assets/img/{{films.cover}}"/>
+                <img class="cover" src="{{films.cover}}"/>
             </div>
             <div class="clear"></div>
         </div>
@@ -80,19 +80,22 @@
                 <h4 class="modal-title" id="myModalLabel">Add movie to database</h4>
             </div>
             <div class="modal-body">
-                <form>
-                    Titel:<br><input type="text" name="title" class="form-control"><br><br>
-                    Jahr: <br><input type="text" name="year" class="form-control"><br><br>
-                    Bildlink:<br><input type="text" name="cover" class="form-control"><br><br>
-                    Schauspieler:<br><input type="textarea" name="actor" class="form-control"><br><br>
-                    Genre:  <select class="form-control" name="genre" multiple>
-                    <option ng-repeat="genre in genres">{{genre}}</option>
-                </select>
+                <form novalidate>
+                    Title:<br><input type="text" name="title" class="form-control" ng-model="filmToAdd.title"><br><br>
+                    Year: <br><input type="text" name="year" class="form-control" ng-model="filmToAdd.year"><br><br>
+                    Link to Picture:<br><input type="text" name="cover" class="form-control" ng-model="filmToAdd.cover"><br><br>
+                    Actors:<br><select class="form-control" name="genre" multiple ng-model="filmToAdd.actors">
+                        <option ng-repeat="actor in actors">{{actor}}</option>
+                    </select><br><br>
+                    Genres:  <select class="form-control" name="genre" multiple ng-model="filmToAdd.genres">
+                        <option ng-repeat="genre in genres">{{genre}}</option>
+                    </select>
+                    Plot: <textarea name="plot" ng-model="filmToAdd.plot"> </textarea>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button ng-click="saveFilm()" type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
